@@ -1,0 +1,337 @@
+
+/* --------------
+global styling
+---------------*/
+
+*{
+    box-sizing: border-box;
+    top:0;
+    left: 0;
+    font-family: 'Gochi Hand', cursive;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: orange; */
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+#h2-container{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+h2{
+    text-align: center;
+    font-size: 32px;
+}
+a{
+    text-decoration: none;
+}
+#home-back-button-container{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+}
+#go-home-button{
+    position:absolute;
+    height: 75px;
+    width: auto;
+    top: 12px;
+    background-color: white;
+    color: black;
+    line-height: 75px;
+    text-align: center;
+    border: solid 5px black;
+    border-radius: 10px;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    float: left;
+}
+#go-home-button:hover{
+    background-color: red;
+    color: white;
+}
+
+/* --------------
+index styling
+---------------*/
+
+#button-container{
+    height: 200px;
+    width: 100%;
+    background-color: lightgrey;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.link-button{
+    height: 75px;
+    width: 250px;
+    background-color: white;
+    color: black;
+    margin: 20px;
+    line-height: 75px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 32px;
+    border: solid 5px black;
+}
+.link-button:hover{
+    background-color: green;
+    color: white;
+}
+
+/* --------------
+addition styling
+---------------*/
+
+#level-container{
+    height: 600px;
+    width: 100%;
+    background-color: lightgrey;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------
+addition level 1 styling
+---------------*/
+
+#go-back-button{
+    
+    height: 75px;
+    width: auto;
+    background-color: white;
+    color: black;
+    line-height: 75px;
+    text-align: center;
+    border: solid 5px black;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 12px;
+    float: right;
+}
+
+#go-back-button:hover{
+    background-color: yellow;
+}
+#start-done-container{
+    position: relative;
+    display: flex;
+    height: 140px;
+    background-color: black;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#start-button{
+    height: 100px;
+    width: 30%;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: solid 5px white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    margin-top: 20px;
+}
+#start-button:hover{
+    cursor: pointer;
+    background-color: rgba(100, 255, 100, 0.7);
+}
+#done-button{
+    height: 100px;
+    width: 30%;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: solid 5px white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    margin-top: 20px;
+    display: none;
+}
+#done-button:hover{
+    cursor: pointer;
+    background-color: rgba(100, 100, 255, 0.5);
+}
+#problem-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: start;
+    height: 500px;
+    width: 96%;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 2%;
+    left: 5%;
+    top: 280px;
+}
+#problem-container p{
+    font-size: 40px;
+    color: black;
+    /* background-color: brown; */
+    /* padding-left: -30%; */
+    margin: 0;
+    
+}
+
+#inputs-container{
+    height: 500px;
+    font-size: 40px;
+    width: 96%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* background-color: rgba(255, 100, 200, 0.8); */
+    position: absolute;
+    margin-left: 2%;
+    top: 280px;
+    left: 5%;
+    /* transform: translateY(20px); */
+    justify-items: center;
+    /* top: 315px; */
+}
+#inputs-container input{
+    height: 40px;
+    font-size: 40px;
+    width: 60px;
+    text-align: center;
+    border-radius: 10px;
+    /* margin-right: 10%; */
+    /* margin-top: 20px;
+    margin-bottom: 21px;
+    margin-right: 50px; */
+
+}
+#scoreboard{
+    height: 650px;
+    width: 60%;
+    top: -150px;
+    background-color: rgba(255, 255, 255, 1.0);
+    position: relative;
+    margin: auto;
+    border: solid 5px black;
+    border-radius: 10px;
+    display: none;
+}
+#score{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -50px;
+    font-size: 40px;
+    /* background-color: rgba(255, 255, 255, 1.0); */
+}
+#percent{
+    text-align: center;
+    margin-bottom: -30px;
+    font-size: 60px;
+}
+#question{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+#fix-wrong-answers-button{
+    text-align: center;
+    font-size: 40px;
+    height: 100px;
+    width: 90%;
+    background-color: rgba(100, 255, 100, 0.7);
+    position: relative;
+    margin: auto;
+    line-height: 60px;
+    padding: 20px;
+    border: solid 5px black;
+    border-radius: 50px;
+}
+#fix-wrong-answers-button:hover{
+    background-color: rgba(100, 255, 100, 1.0);
+    cursor: pointer;
+}
+#try-again-button{
+    text-align: center;
+    font-size: 40px;
+    height: 100px;
+    width: 90%;
+    background-color: rgba(100, 255, 100, 0.7);
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 60px;
+    padding: 20px;
+    border: solid 5px black;
+    border-radius: 50px;
+    color: black;
+}
+#try-again-button:hover{
+    background-color: rgba(100, 255, 100, 1.0);
+    cursor: pointer;
+}
+#next-level-button{
+    text-align: center;
+    font-size: 40px;
+    height: 100px;
+    width: 90%;
+    background-color: rgba(100, 255, 100, 0.7);
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 60px;
+    padding: 20px;
+    border: solid 5px black;
+    border-radius: 50px;
+    color: black;
+}
+#next-level-button:hover{
+    background-color: rgba(100, 255, 100, 1.0);
+    cursor: pointer;
+/* @media(max-width: 768px) {
+    #problems-list{
+        grid-template-columns: 50% 50%;
+       
+    }
+
+} */
+
+/* --------------
+subtraction styling
+---------------*/
+
+
+
+/* --------------
+multiplication styling
+---------------*/
