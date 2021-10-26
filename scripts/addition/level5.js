@@ -1,4 +1,4 @@
-
+///level 5 having trouble due to the 10 and 11
 
 // --------------
 // Addition logic
@@ -58,7 +58,7 @@ const createRandomEquations = (equationType, array, numOfProblems) => {
 }
 
 //create equations
-let additionProblems = createRandomEquations('addition', levelOne, 20);
+let additionProblems = createRandomEquations('addition', levelFive, 20);
 
 //initialize buttons
 let startButton = document.getElementById('start-button');
@@ -118,7 +118,7 @@ function splitArray(array) {
 function filterNumbers (array) {
     let newArray = [];
     for (let i = 0; i < array.length; i++) {
-        if (array[i] === '1' || array[i] === '2' || array[i] === '3') {
+        if (array[i] === '2' || array[i] === '3' || array[i] === '4' ||array[i] === '5' || array[i] === '6' || array[i] === '7' || array[i] === '8' || array[i] === '9') {
             newArray.push(array[i]);
         }
     }
