@@ -324,7 +324,7 @@ addition level 1 styling
         }
         #inputs-container input{
             height: 35px;
-            font-size: 35px;
+            font-size: 15px;
             width: 50px;
         }
     }
@@ -359,7 +359,7 @@ addition level 1 styling
         }
         #inputs-container input{
             height: 35px;
-            font-size: 35px;
+            font-size: 15px;
             width: 50px;
             margin-left: 70px;
         }
