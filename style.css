@@ -317,10 +317,12 @@ addition level 1 styling
 }
 
     @media(max-width: 1024px) {
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
         #problem-container p{
             font-size: 35px;
-           
-            }
+        }
         #inputs-container input{
             height: 35px;
             font-size: 35px;
@@ -328,7 +330,10 @@ addition level 1 styling
         }
     }
     
-    @media(max-width: 375px) {
+    @media(max-width: 768px) {
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
         #addition-h1{
             margin-left: 100px;
         }
