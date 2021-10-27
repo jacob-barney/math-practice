@@ -226,7 +226,7 @@ addition level 1 styling
 #inputs-container input{
     -webkit-appearance: none;
     height: 40px;
-    font-size: 30px;
+    font-size: 40px;
     width: 60px;
     text-align: center;
     border-radius: 10px;
@@ -317,7 +317,7 @@ addition level 1 styling
     cursor: pointer;
 }
 
-    /* @media(max-width: 1024px) {
+    @media(max-width: 1024px) {
      
         #problem-container p{
             font-size: 35px;
@@ -388,7 +388,7 @@ addition level 1 styling
             font-size: 30px;
         }
     }
-            */
+           
 
 /* --------------
 subtraction styling
